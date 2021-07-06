@@ -40,4 +40,4 @@ The problem is a text classification problem and the solution Jupyter Notebook i
 2. Submission.csv
 3. README.md
 
-#### The jupyter notebook assumes the data is dßownloaded and extracted in the following path data/fake-news/
+#### The jupyter notebook assumes the data is downloaded and extracted in the following path data/fake-news/
