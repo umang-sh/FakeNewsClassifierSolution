@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-The problem  is a text classification problem and the solution Jupyter Notebook is broken down into 3 steps
+The problem is a text classification problem and the solution Jupyter Notebook is broken down into 3 steps
 
 - Feature Engineering
 - Data Pre-Processing
@@ -38,4 +38,6 @@ The problem  is a text classification problem and the solution Jupyter Notebook 
 ## The repository contains following files:
 1. FakeNewsClassifier.ipynb 
 2. Submission.csv
-3. Data
+3. README.md
+
+#### The jupyter notebook assumes the data is dßownloaded and extracted in the following path data/fake-news/
