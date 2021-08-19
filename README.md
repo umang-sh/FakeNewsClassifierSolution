@@ -33,19 +33,23 @@ The repository provides the code for following:
 We do few exploratory analyses via plots to understand the data better:
 
 1. Histograms of sentence lengths. This tells us the lengths of both reliable and unreliable news articles and it can be clearly seen that reliable articles are shorter in length.
+2. 
  ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/histogramoflengths.png)
 
 2. Secondly,we look at the distribution of labels, i.e how many reliable vs unreliable news articles do we have in the data. Data has almost equal amount of both reliable and unreliable news, this tells us we won't have a **Class Imbalance problem**
+3. 
 ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/classdistribution.png)
 
 3. We then look at the counts of bigrams and trigrams in the text. It gives us following insights:
    - New York is the most common bigram in the reliable news and hillari clinton is most common one in unreliable
    - New york time is the most common trigam in the reliable and norepli blogger com in the unreliable one
 Shown below is one such bigram plot:
+
 ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/bigrams.png)
 
 4. Lastly we look at word clouds,we look at the word cloud of both reliable and unreliable news, word clouds give us a pretty good picture of the terms present in the data. The size of the words in the word cloud is proportional to how frequently they appear in the data
 Shown below is the word cloud for reliable news articles:
+
 ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/reliablewordcloud.png)
 
 
@@ -120,7 +124,7 @@ We achieve the max accuracy of 93 % hyperparameter tuning with this combination 
 #### 4. Word2Vec+ LSTM:
 We create a simple Neural network with Embedding as the input and 1 LSTM unit followed by a dense layer  for results. For word embeddings, we use the Keras Embedding layer and make it untrainable since we already created that with gensim's word2vec.
 
-We acheive the best possible accuracy 98 % with this approach with follwing confusion matrix:
+We acheive the best possible accuracy **98 %**  with this approach with follwing confusion matrix:
 ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/confusionm4.png)
 
 
