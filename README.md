@@ -33,11 +33,11 @@ The repository provides the code for following:
 We do few exploratory analyses via plots to understand the data better:
 
 1. Histograms of sentence lengths. This tells us the lengths of both reliable and unreliable news articles and it can be clearly seen that reliable articles are shorter in length.
-2. 
+
  ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/histogramoflengths.png)
 
 2. Secondly,we look at the distribution of labels, i.e how many reliable vs unreliable news articles do we have in the data. Data has almost equal amount of both reliable and unreliable news, this tells us we won't have a **Class Imbalance problem**
-3. 
+
 ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/classdistribution.png)
 
 3. We then look at the counts of bigrams and trigrams in the text. It gives us following insights:
