@@ -1,20 +1,46 @@
 # Fake News Classifier Solution
-## _This repository contains the code and results for Fake News classifier problem_
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-The problem is a text classification problem and the solution Jupyter Notebook is broken down into 3 steps
+## Problem
+Internet is filled with Fake news. The problem is a NLP  problem to identify fake news given any news article. The dataset is present here: 
+https://www.kaggle.com/c/fake-news
 
-- Feature Engineering
-- Data Pre-Processing
-- Model Building and Evaluation
+The repository provides the code for following:
+1.  Data Pre-Processing and cleaning
+2. Exploratory Data Analysis for the Fake News Dataset
+3. Multiple Feature Extraction approaches
+4. Multiple Modeling Approaches, Both ML and DL.
+5. Hyperparameter tuning for every approach
+6. Confusion Matrix for every approach
+7. Conclusion of results
+
 
 ## Solution Approach
 
+### 1. Data Pre-Processing and Cleaning 
 - We start by getting rid of nulls first in every feature column, we replace them with blank spaces
-- Then we create a synthetic feature called "merged", which is combination of text and author columns, the reason of this is also written in the Jupyter notebook markdown
-- Moving on, we perform data pre-processing steps, such as punctutation removal, stemming etc. The details can be found in the notebook
-- We then perform padding to make sure every input feature vector is of the same length
+- Then we create a synthetic feature called "merged", which is combination of text and author columns,, this is done for 2 purposes:
+    1. Classification of the news depends on both author and the content, hence a single feature would be better for learning
+   2. The algorithm would only have a single feature to learn on.
+   
+- Moving on, we perform the following data pre-processing steps:
+    1. All the punctuations/sequences are removed, they don't really help in the model learning
+    2. To prevent confusion and to ease the feature extraction process, we convert everything to lower case
+    3. We then make a continous stream of tokens rather than sentences
+    4. Then we do stemming which is a common NLP pre-procesing step, it reduces the word to its root word for e.g chocolaty becomes chocolate   
+    
+### 2. Exploratory Data Analysis for the Fake News Dataset
+We do few exploratory analyses via plots to understand the data better:
+1. Histograms of sentence lengths
+ ![alt text](https://github.com/umang-sh/FakeNewsClassifierSolution/blob/main/screenshots/bigrams.png)
+
+2. 
+3.
+
+
+
+
+
 - Lastly, we train and look at the metrics of 2 models
 - We first try a ML model , A tree based model with Boosting called XG boost, we then try a Deep learning model as well, since LSTMs have proven to work very well in text classification scenarios.
 
