@@ -129,6 +129,6 @@ We acheive the best possible accuracy **98 %**  with this approach with follwing
 
 
 ### Conclusion:
-In conclusion, we tried multiple feature extraction approaches, better the feature extraction usually better the results are. Also choice of model becomes important after finding a good representation of data.
+In conclusion, we tried multiple feature extraction approaches, better the feature extraction usually better the results are. Also the choice of model becomes important after finding a good representation of data.
 
 Word2Vec+LSTM gives us the best results. The reason for that is that Word Embeddings captures all the semantics behind words and also the relationship between the words very well and provided a good representation of words. Also LSTM being an RNN works very well with texts and captures long term relationships and short term relationships amongst words without having problems of exploding and vanishing gradients.
